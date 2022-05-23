@@ -11,7 +11,7 @@ Here are some ideas to get you started:
   - Part-Time Online tutor in a well known academy from Spain.
 
 - ### 🌱 I’m currently learning:
-  - Full Stack Web Development @ DigitalHouse 
+  - Full Stack Web Development at  [![Digital House](https://img.shields.io/badge/-Digital_House-red?logo=accenture&logoColor=red&labelColor=grey)](https://www.digitalhouse.com/ar/productos/programcion/programacion-web-full-stack)
 
 - ### ⚡ Fun fact:
   - I'm a Civil Engineering undergrad, currently pursuing a career as a programmer.
