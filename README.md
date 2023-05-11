@@ -8,7 +8,7 @@ Here are some ideas to get you started:
 -->
 
 - ### 🔭 I’m currently working as a:
-  - Part-Time Online tutor in a well known academy from Spain.
+  - Part-Time Online tutor and developer at [Academia Paraninfo](https://www.paraninfo.com/).
 
 - ### 🌱 I’m currently learning:
   - Full Stack Web Development at  [![Digital House](https://img.shields.io/badge/-Digital_House-red?logo=accenture&logoColor=red&labelColor=grey)](https://www.digitalhouse.com/ar/productos/programcion/programacion-web-full-stack)
