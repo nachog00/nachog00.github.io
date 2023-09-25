@@ -10,23 +10,26 @@ const last_posts = posts.slice(0, 3);
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋 I'm</div>
+    <div class="text-xl py-1 opacity-50">Hey there 👋 I'm</div>
     <div class="text-5xl font-bold">Ignacio Geoghegan</div>
-    <div class="text-3xl py-3 font-bold">Full Stack Developer - Data Science Student</div>
+    <div class="text-3xl py-3 font-bold opacity-75">Full Stack Developer - Data Science Student</div>
     <div class="py-2">
-      <text class="text-lg">
-        A full stack developer with a passion for data driven solutions.
-        <br> Currently working as a Software Engineer at{" "}
-        <a href="https://academiauniversitaria.paraninfo.com/" target="_blank" class="text-blue-500">
+      <text class="text-lg text-center sm:text-start">
+        <p>
+          Currently working as a Software Engineer at{" "}
+        <a href="https://academiauniversitaria.paraninfo.com/" target="_blank" class="text-blue-500 block my-1 sm:inline">
           Academia Universitaria Paraninfo
         </a>
-        <br>Also a Data Science student at{" "}
-        <a href="https://www.iu.org/en-za/bachelor/data-science/" target="_blank" class="text-blue-500">
+        </p>
+        <p>
+          Also a Data Science student at{" "}
+        <a href="https://www.iu.org/en-za/bachelor/data-science/" target="_blank" class="text-blue-500 block my-1 sm:inline">
           Int. University of Applied Sciences (<b>IU</b>)
         </a>
+        </p>
       </text>
     </div>
-    <div class="mt-8">
+    <div class="mt-4 w-full flex justify-around sm:mt-8 sm:justify-normal">
       <a class="btn" href="mailto:ignaciog00@gmail.com?subject=Let's%20connect&body=Hi,%20I%20came%20here%20from%20your%20personal%20site." target="_blank"> Let's connect!</a>
     </div>
   </div>
