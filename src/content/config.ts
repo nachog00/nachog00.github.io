@@ -7,6 +7,7 @@ const blogSchema = z.object({
     updatedDate: z.string().optional(),
     heroImage: z.string().optional(),
     badge: z.string().optional(),
+    slug: z.string().optional(),
 });
 
 const storeSchema = z.object({

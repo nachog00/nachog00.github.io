@@ -4,9 +4,11 @@ import BaseLayout from "./BaseLayout.astro";
 import dayjs from "dayjs";
 import localizedFormat from "dayjs/plugin/localizedFormat";
 
-export interface Props extends BlogSchema {}
+export interface Props extends BlogSchema {
+  imageTransitionName?: string;
+}
 
-const { title, description, pubDate, updatedDate, heroImage, badge } =
+const { title, description, pubDate, updatedDate, heroImage, badge , imageTransitionName } =
   Astro.props;
 dayjs.extend(localizedFormat);
 const displayDate = dayjs(pubDate).format("ll");
@@ -26,6 +28,7 @@ import { Image } from "@astrojs/image/components";
             src={heroImage}
             alt={title}
             class="w-full mb-6"
+            transition:name={imageTransitionName}
           />
         )
       }
