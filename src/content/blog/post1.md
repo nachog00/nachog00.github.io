@@ -1,16 +1,65 @@
 ---
-title: "Demo Post 1"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 10 2022"
-heroImage: "/post_img.webp"
+title: "First thoughts on Astro"
+description: "I describe my first thoughts on Astro, the new static site generator."
+pubDate: "Sep 25, 2023"
+heroImage: "/thumbnails/blog/astro-homepage.png"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+I got into this framework thanks to <a href="https://midu.dev/" target="_blank">**Midudev**</a>. He mentioned it throghout his <a href="https://www.youtube.com/channel/UC8LeXCWOalN8SxlrPcG-PaQ" target="_blank">**YouTube channel**</a> and I decided to give it a try.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+## What is <a href="https://astro.build/" target="_blank">Astro</a>?
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+**Astro** is a new static site generator that allows you to use React, Vue, Svelte or any other framework to build your website. But it's not only that, it also allows you to use Markdown and CSS to build your website.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+## Where I came from
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+I came from React, I had been using it for most of my project throughout last year or so, since I got the hang of it. I loved the javascript first approach, it just seemed rigth to me.
+But at the same time, when faced with some more minor projects, I did begin to realize that maybe there was some overkill going on. I mean, I was using React for everything, even for the most simple of projects. And that's when I started to question if there wasn't a better way to do things for those cases.
+
+That's when I found **Astro**. It seemed like the perfect fit for those projects, and I decided to give it a try.
+
+## My first impressions
+
+So, the very first thing i like about this framework is that it's really easy to get started. You just need to install it and you are ready to go. There's no function declarations or hooks, or anything like that. Simply import the components you need and you are ready to go.
+
+This allows for the very much apreciated feature of **components**, but with considerably less boilerplate than React. Also, the routing is **file based** which is a really nice feature. Mybe not as flexible as React, but awesome when you just want a simple static page with a couple of routes.
+
+Now don't get me wrong, **Astro** i still capable *( as far as im concerned )* of more than simple static pages. It uses an "islands" approach, whic means that it will only load up javascript on the components that need it. This allows for a really fast initial load, and a really fast navigation between pages.
+
+There's also supports a hybrid *server side* and *client side* rendering, which is really nice. It allows you to use the best of both worlds, and it's really easy to implement.
+
+## My first project
+
+I had been wanting to build my very own personal porfolio website for wuite some time. I then thought that this would be the perfect opportunity to try out **Astro**. And I was not dissapointed.
+
+I did think of building it from the ground up, but on **Astro's** very own website, they list loads of quite great templates. I decided to use one of those as a starting point, and then build on top of it.
+
+I did have some problems with the template, but I was able to solve them quite easily. I did have to do some research, but I was able to solve them in a couple of hours.
+
+I picked <a href="https://github.com/manuelernestog/manuelernestog.github.io#astro-modern-personal-website/" target="_blank">**Manuel Ernesto's**</a> template called **Astrofy**. It's a really nice template, and it's really easy to customize. I did have to do some research on how to customize it, but it was really easy to do so.
+
+Form then on, I added a few features like <a href="https://docs.astro.build/en/guides/view-transitions/" target="_blank">**View Transitions**</a>, which is also one of the features that I really like about **Astro**. It's really easy to implement, and it's really nice to have. Of course, this is a Web Dev thing, but it's really nice to have it built in.
+
+I also added a few more features, like a **Dark Mode** toggle, and I plan on adding **Language support** in the future.
+
+You can judge the results by yourself, since this post is being written on that very same website.
+
+
+## Pros and Cons
+
+### What I really liked
+
+* **Easy to get started**
+* **Easy to customize**
+* **Easy to create components**
+* **Markdown support** - makes writing blogs super easy
+* **File based routing** - makes routing quick and simple
+
+### What I didn't like
+
+Honestly, I still havent found anything that I don't like about **Astro**. I'm sure that there are some things that I will find in the future, but for now, I'm really happy with it.
+I'll update this post if I find something that I don't like. Make sure to subscribe to my newsletter to get notified when I do.
+
+## Final thoughts
+
+I'm really happy with **Astro**. I think that it's a really nice framework, and I'm sure that it will be my go to solution for simple static pages. I'm also sure that I will use it for more complex projects in the future.
