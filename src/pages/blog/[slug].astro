@@ -15,7 +15,7 @@ interface Props {
 }
 
 const { entry } = Astro.props;
-const post : BlogSchema = { ... entry.data , slug: entry.slug }
+const post : BlogSchema = entry.data;
 const { Content } = await entry.render();
 ---
 
@@ -26,7 +26,6 @@ const { Content } = await entry.render();
     heroImage={post.heroImage} 
     updatedDate={post.updatedDate} 
     badge={post.badge}
-    imageTransitionName={`blog-${post.slug}`}
     >
     <Content/>
 </PostLayout>

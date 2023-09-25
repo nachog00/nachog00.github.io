@@ -1,5 +1,5 @@
 ---
-const { title, img, desc, url, badge, tags, target = "_blank", imageTransitionName } = Astro.props;
+const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
 import { Image } from "@astrojs/image/components";
 ---
 
@@ -17,7 +17,6 @@ import { Image } from "@astrojs/image/components";
             format="webp"
             alt={title}
             class="max-w-full md:max-w-[13rem] rounded-lg"
-            transition:name={imageTransitionName}
           />
         )
       }
