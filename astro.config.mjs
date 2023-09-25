@@ -10,11 +10,14 @@ import image from "@astrojs/image";
 export default defineConfig({
   site: 'https://nachog00.github.io',
   base: '/',
+  experimental: {
+    viewTransitions: true
+  },
   integrations: [mdx(), sitemap(), tailwind(), image(
     {
       serviceEntryPoint: '@astrojs/image/sharp',
       cacheDir: "./.cache/image",
       logLevel: 'debug',
-    }
+    },
   )],
 });
