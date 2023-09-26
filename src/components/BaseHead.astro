@@ -13,20 +13,45 @@ export interface Props {
 const { title, description, image = "/social_img.png" } = Astro.props;
 ---
 
-<!-- Theme Toggling -->
-<script is:inline>
-  // ☝️ This script prevent the FART effect.
-  if (localStorage.getItem("theme") === null) {
-    document.documentElement.setAttribute("data-theme", "light");
-  } else
-    document.documentElement.setAttribute(
-      "data-theme",
-      localStorage.getItem("theme")
-    );
-  // "theme" LocalStorage value is set by the package to remember user preference.
-  // The value is checked and applyed before rendering anything.
-</script>
-<script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
+
+<script>
+	// Select all theme-toggle inputs
+	const toggles = document.querySelectorAll(
+	  "input.theme-toggle"
+	) as NodeListOf<HTMLInputElement>;
+  
+	// Get the current theme from localStorage or set a default theme
+	const currentTheme = () => localStorage.getItem("theme") || "corporate";
+  
+	// Apply the current theme to the data-theme attribute
+	document.documentElement.setAttribute("data-theme", currentTheme());
+  
+	// Set the checked state of theme-toggle inputs based on the current theme
+	toggles.forEach((toggle) => {
+	  toggle.checked = currentTheme() === "business";
+	});
+  
+	// Add change event listeners to theme-toggle inputs
+	toggles.forEach((toggle) => toggle.addEventListener("change", switchTheme));
+  
+	function switchTheme(e) {
+  
+	  console.table({
+		currentTheme: currentTheme(),
+		checked: e.target.checked,
+	  });
+  
+	  // Get the selected theme from the clicked input
+	  const selectedTheme = e.target.checked ? "business" : "corporate";
+  
+	  // Apply the selected theme to the data-theme attribute
+	  document.documentElement.setAttribute("data-theme", selectedTheme);
+  
+	  // Store the selected theme in localStorage
+	  localStorage.setItem("theme", selectedTheme);
+	}
+  </script>
+  
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
@@ -54,4 +79,4 @@ const { title, description, image = "/social_img.png" } = Astro.props;
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
 <!-- View Transitions -->
-<ViewTransitions />
+<ViewTransitions  />
